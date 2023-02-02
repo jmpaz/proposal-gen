@@ -9,7 +9,7 @@ from langchain.chains.conversation.memory import ConversationBufferMemory
 
 
 def load_chain():
-    llm = OpenAI(model_name="text-chat-davinci-002-20230126", temperature=0.8)
+    llm = OpenAI(model_name="text-davinci-003", temperature=0.8)
 
     prompt = PromptTemplate(
         input_variables=['history', 'input'],
